@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Poppins:wght@100;300;400;500;700&display=swap");
+
+:root {
+    --yellow: #f00606c3;
+    --light-yellow: #c00b0b85;
+    --black: #020105;
+    --light-color: #666;
+    --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none !important;
+    text-transform: capitalize;
+    transition: none;
+}
+
+.container {
+    margin-top: 60px;
+}
+.container .sidebar {
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+}
+.container .sidebar h1 {
+    margin: 20px 0px 10px 15px;
+    cursor: pointer;
+}
+
+.container .sidebar ul li {
+    list-style: none;
+    padding: 10px;
+    margin-bottom: 2px;
+    border: var(--border);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: #fff;
+    z-index: 100;
+    color: var(--black);
+}
+
+.container .sidebar ul li a {
+    width: 100%;
+    text-align: center;
+}
+.container .sidebar ul li:hover {
+    background-color: var(--black);
+}
+.container .sidebar ul li:hover {
+    color: var(--yellow);
+    font-size: 1.8rem;
+}
+.bg-img {
+    /* The image used */
+    background-image: url("../images/images/home-img.png");
+    position: fixed;
+    /* Add the blur effect */
+    filter: blur(8px);
+
+    /* Full height */
+    height: 100%;
+    width: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -100;
+}
+.content .wrapper {
+    position: relative;
+}
+.content .wrapper .titre-section {
+    position: fixed !important;
+    top: 0;
+    opacity: 1;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10rem;
+    margin-left: 150px;
+}
+.content .wrapper .titre-section .yellow {
+    color: var(--yellow);
+    animation: myYellow 1s linear 2s infinite alternate;
+}
+@keyframes myYellow {
+    0% {
+        color: var(--yellow);
+    }
+    100% {
+        color: var(--black);
+    }
+}
+.content .wrapper .titre-section .black {
+    color: var(--black);
+    animation: myBlack 1s linear 2s infinite alternate;
+}
+@keyframes myBlack {
+    0% {
+        color: var(--black);
+    }
+    100% {
+        color: var(--yellow);
+    }
+}

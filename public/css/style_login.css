@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Poppins:wght@100;300;400;500;700&display=swap');
+
+:root {
+    --yellow: #f00606c3;
+    --light-yellow: #c00b0b85;
+    --black: #020105;
+    --light-color: #666;
+    --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+    font-family: 'Poppins' ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none !important;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+.bg-image {
+    /* The image used */
+    background-image: url("../images/images/home-img.png");
+    position: absolute;
+    /* Add the blur effect */
+    filter: blur(1px);
+  
+    /* Full height */
+    height: 100%;
+    width: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .btn-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    z-index: 2;
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+.wrapper{
+    position: relative;
+}
+.login-form-container{
+    position: fixed !important;
+    top: 0;left: 0;
+    opacity: 1;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form-container form{
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    background-color: #ffffff94;
+    border:var(--border);
+    text-align: center;
+    width: 40rem;
+
+}
+.login-form-container form .buttons{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+}
+.login-form-container form .btn{
+    
+    display: block;
+    width: 50%;
+    background-color: var(--yellow);
+    margin: auto;
+    color: var(--black);
+    font-size: 1.5rem;
+    margin-top: 10px;
+    padding:5px 0px;
+}
+.login-form-container form .btn:hover{
+    color: var(--yellow);
+    background-color: var(--black);
+    /* font-size: 2rem; */
+    font-weight: bold;
+
+}
+.login-form-container form h3{
+    color: var(--black) ;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+.login-form-container form h3 span{
+    color: var(--yellow) ;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.login-form-container form .box{
+    margin: .7rem 0;
+    width: 100%;
+    text-transform: none;
+    color: var(--black);
+    font-size: 1.6rem;
+    padding: 1rem 1.2rem;
+    border: var(--border);
+    border-radius:5rem;
+}
+.login-form-container form .box:hover{
+    box-shadow: var(--box-shadow);
+
+}
+
+.login-form-container form p{
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color:var(--light-color);
+    margin-bottom: 0px;
+}
+
+.login-form-container form p a{
+    color:var(--yellow);
+
+}
+.login-form-container form p a .create{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.login-form-container #close-login-form{
+    position: absolute ;
+    top: 1.5rem; right: 2.5rem;
+    font-size: 5rem;
+    color: var(--black);
+    cursor: pointer;
+} 

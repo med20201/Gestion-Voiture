@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Poppins:wght@100;300;400;500;700&display=swap");
+
+:root {
+    --yellow: #f00606c3;
+    --light-yellow: #c00b0b85;
+    --black: #020105;
+    --light-color: #666;
+    --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none !important;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr;
+    background-image: url("../images/images/home-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    object-fit: cover;
+    backdrop-filter: blur(10px);
+    height: 100vh;
+}
+
+h3 {
+    font-size: 2rem;
+    letter-spacing: 1.2px;
+    color: #a6a6a6;
+}
+
+img {
+    max-width: 100%;
+    filter: drop-shadow(1px 1px 3px #a6a6a6);
+    margin-left: 20px;
+}
+
+/* ----- Product Section ----- */
+.product {
+    display: grid;
+    grid-template-columns: 0.9fr 1fr;
+    margin: auto;
+    padding: 2.5em 0;
+    min-width: 600px;
+    background-color: #ffffff9d;
+    border-radius: 5px;
+    margin-top: 100px;
+}
+
+/* ----- Photo Section ----- */
+.product__photo {
+    position: relative;
+}
+
+.photo-container {
+    position: absolute;
+    left: -30em;
+    display: grid;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+.photo-main img {
+    position: absolute;
+    left: 15em;
+    top: 2em;
+    max-width: 150%;
+    filter: saturate(150%) contrast(120%) hue-rotate(10deg)
+        drop-shadow(1px 20px 10px rgba(0, 0, 0, 0.3));
+}
+
+.photo-main img:hover {
+    transform: scale(1.1);
+}
+
+/* ----- Informations Section ----- */
+.product__info {
+    padding: 0.8em 0;
+}
+
+.title h1 {
+    margin-bottom: 0.1em;
+    color: var(--black);
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.price {
+    margin: 1.5em 0;
+    color: var(--yellow);
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.price span {
+    padding-left: 0.15em;
+    font-size: 2.9em;
+}
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.buy--btn {
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.5em;
+    font-weight: 900;
+    letter-spacing: 1.3px;
+    color: var(--black);
+    background-color: var(--yellow);
+    box-shadow: 2px 2px 25px -7px #4c4c4c;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buy--btn:hover {
+    transform: scale(0.97);
+    background: var(--black);
+    color: var(--yellow);
+    font-size: 1.5rem;
+}
+
+.dateL label,
+.dateR label {
+    display: inline-block;
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+.dateL input {
+    border: var(--border);
+    border-radius: 5rem;
+    width: 15rem;
+    height: 3rem;
+}
+.dateR input {
+    border: var(--border);
+    border-radius: 5rem;
+    width: 15rem;
+    height: 3rem;
+    margin-left: 27px;
+}
+.dateL {
+    margin-bottom: 10px;
+}
+.dateR {
+    margin-bottom: 10px;
+}

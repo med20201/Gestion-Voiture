@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Poppins:wght@100;300;400;500;700&display=swap");
+
+:root {
+    --yellow: #f00606c3;
+    --light-yellow: #c00b0b85;
+    --black: #020105;
+    --light-color: #666;
+    --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.content .wrapper {
+    position: relative;
+    margin-left: 320px;
+}
+.content .wrapper table {
+    width: 1000px;
+    font-size: 1.8rem;
+    background: rgba(255, 255, 255, 0.623);
+    text-align: center;
+    margin-top: 100px;
+}
+.content .wrapper .form_car {
+    width: 900px;
+    font-size: 1.8rem;
+    background: rgba(255, 255, 255, 0.623);
+    text-align: center;
+    margin-top: 100px;
+}
+.content .wrapper .form_car h1 {
+    font-weight: bold;
+}
+.content .wrapper .form_car div {
+    margin: 0.5rem;
+    text-align: center;
+}
+.content .wrapper .form_car label {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    text-align: center;
+    width: 500px;
+    margin-right: 3rem;
+}
+.content .wrapper .form_car input {
+    width: 250px;
+    height: 5rem;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    font-size: 2rem;
+    margin-left: 2rem;
+    text-align: left;
+    margin-right: 3rem;
+    text-indent: 1rem;
+}
+.content .wrapper .form_car input[type="radio"] {
+    width: 2rem;
+    height: 1.8rem;
+}
+.content .wrapper .form_car input[type="file"] {
+    border-radius: 0px;
+    border: none;
+    width: 250px;
+    height: 5rem;
+}
+.content .wrapper .form_car input[type="submit"] {
+    margin: 20px 0px;
+    border-radius: 2rem;
+    text-align: center;
+    width: 150px;
+    color: var(--black);
+    background: var(--yellow);
+}
+.content .wrapper .form_car input[type="submit"]:hover {
+    color: var(--yellow);
+    background: var(--black);
+    font-size: 2rem;
+    font-weight: bold;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.content .wrapper .form_car select {
+    width: 250px;
+    height: 5rem;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    font-size: 2rem;
+    margin-left: 2rem;
+    text-align: left;
+    margin-right: 3rem;
+    text-indent: 1rem;
+}
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+
+    padding: 0;
+    margin: 0;
+}
